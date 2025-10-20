@@ -1,0 +1,7 @@
+plugins:
+  - id: pytools
+    kind: builtin_pytools
+  - id: node-basic
+    kind: process
+    optional: true
+    command: ["node", "./plugins/node/basic.js", "--serve"]

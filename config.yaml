@@ -1,0 +1,3 @@
+plugins:
+  - id: pytools
+    kind: builtin_pytools

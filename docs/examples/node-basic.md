@@ -1,19 +1,26 @@
-# Node.js: Basic Completion
+# Node Plugin Example
 
-```ts
-import { Protei } from "@agi-protei/sdk";
+A trivial Node-based plugin that supports `string.reverse`.
 
-async function main() {
-  const protei = new Protei({ apiKey: process.env.PROTEI_API_KEY });
-  const result = await protei.completions.create({
-    model: "protei-large",
-    prompt: "Write a haiku about the sea",
-  });
-  console.log(result.text);
-}
+```bash
+node ./plugins/node/basic.js --serve
+```
 
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+Add to `config.yaml`:
+
+```yaml
+plugins:
+  - id: pytools
+    kind: builtin_pytools
+  - id: node-basic
+    kind: process
+    optional: true
+    command: ["node", "./plugins/node/basic.js", "--serve"]
+```
+
+Then:
+
+```bash
+agi-protei --config ./config.yaml list-plugins
+agi-protei --config ./config.yaml invoke --tool string.reverse --params '{"text":"abc"}'
 ```

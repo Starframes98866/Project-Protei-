@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+agi_protei/__init__.py
+agi_protei/cli.py
+agi_protei/orchestrator.py
+agi_protei/plugin_protocol.py
+agi_protei.egg-info/PKG-INFO
+agi_protei.egg-info/SOURCES.txt
+agi_protei.egg-info/dependency_links.txt
+agi_protei.egg-info/entry_points.txt
+agi_protei.egg-info/requires.txt
+agi_protei.egg-info/top_level.txt
+agi_protei/plugins/__init__.py
+agi_protei/plugins/pytools.py

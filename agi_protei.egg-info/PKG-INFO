@@ -1,3 +1,15 @@
+Metadata-Version: 2.4
+Name: agi-protei
+Version: 0.1.0
+Summary: AGI Protei: multi-language plugin orchestrator
+Author: AGI Protei
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: config
+Requires-Dist: pyyaml>=6.0; extra == "config"
+Dynamic: license-file
+
 # AGI Protei
 
 A minimal, working multi-language plugin orchestrator prototype.

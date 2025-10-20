@@ -1,0 +1,6 @@
+plugins:
+  - id: pytools
+    kind: builtin_pytools
+  - id: ideology
+    kind: process
+    command: ["python3", "./agi_protei/plugins/ideology.py", "--serve"]

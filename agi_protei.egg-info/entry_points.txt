@@ -1,0 +1,2 @@
+[console_scripts]
+agi-protei = agi_protei.cli:main

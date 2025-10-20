@@ -20,4 +20,11 @@ Repository = "https://github.com/Starframes98866/Project-Protei-"
 "agi_protei" = ["py.typed"]
 
 [tool.setuptools]
-packages = ["agi_protei", "agi_protei.modules", "agi_protei.modules.ide", "agi_protei.modules.ideological_communist"]
+packages = [
+    "agi_protei",
+    "agi_protei.modules",
+    "agi_protei.modules.ide",
+    "agi_protei.modules.ideological_communist",
+    "agi_protei.modules.gamedev",
+    "agi_protei.modules.space",
+]

@@ -4,7 +4,7 @@ Exports the top-level `Protei` client and plugin primitives.
 """
 from .client import Protei
 from .plugins import Plugin, PluginManager
-from .modules import IdeologicalCommunistModule, IDEModule
+from .modules import IdeologicalCommunistModule, IDEModule, GameDevModule, SpaceModule
 
 __all__ = [
     "Protei",
@@ -12,4 +12,6 @@ __all__ = [
     "PluginManager",
     "IdeologicalCommunistModule",
     "IDEModule",
+    "GameDevModule",
+    "SpaceModule",
 ]
